@@ -12,19 +12,24 @@ import { Head } from '@inertiajs/inertia-vue3';
         <Link
          type="button" class="btn btn-primary" href="./topics">Back
         </Link>
-    </div>
+    
 
-    <div class="flex" style="align-items:center">
-        <form>
-            <div class="form-row">
-                <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
+        <div class="flex pt-10 justify-content-md-center">
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div><br>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1"></label><br>
+                            <input type="file" class="form-control-file" id="image" name="image"><br><br>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     </BreezeAuthenticatedLayout>
 </template>
